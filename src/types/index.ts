@@ -8,6 +8,14 @@ export interface KeywordItem {
   color?: string;
 }
 
+export interface BlockedItem {
+  id: string;
+  text: string;
+  enabled: boolean;
+  createdAt: number;
+  blockedCount: number; // how many times this blocked word/phrase prevented an alert
+}
+
 export interface AlertItem {
   id: string; // YouTube Video ID (used to guarantee NO REPEATS)
   title: string;
@@ -18,6 +26,15 @@ export interface AlertItem {
   url: string;
   thumbnail?: string;
   isRead: boolean;
+}
+
+export interface SkippedAlertLog {
+  id: string;
+  title: string;
+  blockedBy: string;
+  keyword: string;
+  timestamp: number;
+  timeFormatted: string;
 }
 
 export type SoundType = 'android_chime' | 'urgent_pulse' | 'police_scanner' | 'subtle_ping';
@@ -35,4 +52,5 @@ export interface AppSettings {
   notificationsEnabled: boolean;
   checkIntervalSeconds: number; // 15, 30, 60
   deviceViewMode: 'phone' | 'expanded';
+  dailyQuotaLimit: number;
 }
