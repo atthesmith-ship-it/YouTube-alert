@@ -3,15 +3,15 @@
   "name": "YouTube Alert",
   "short_name": "YT Alert",
   "description": "Real-time keyword alert monitor for YouTube with audible notifications, text-to-speech announcements, and instant video alerts.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/youtube-alert/",
+  "scope": "/youtube-alert/",
   "display": "standalone",
   "background_color": "#090a0f",
   "theme_color": "#090a0f",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "icon.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml",
       "purpose": "any"
