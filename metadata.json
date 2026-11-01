@@ -1,0 +1,6 @@
+{
+  "name": "YouTube Alert",
+  "description": "Real-time keyword alert monitor for YouTube with audible notifications, text-to-speech announcements, and instant video alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
